@@ -5,6 +5,7 @@ from datetime import datetime
 from uuid import uuid4
 import models
 
+
 class BaseModel:
     """Defines all common attributes/methods for other classes"""
     def __init__(self, *args, **kwargs) -> None:
@@ -19,7 +20,8 @@ class BaseModel:
         self.updated_at = datetime.now()
 
         if (kwargs):
-            # kwargs['created_at'] = datetime.strptime(kwargs['created_at'], '%Y-%m-%dT%H:%M:%S.%f')
+            # kwargs['created_at'] = datetime.strptime(kwargs['created_at'],
+            # '%Y-%m-%dT%H:%M:%S.%f')
             kwargs['created_at'] = datetime.fromisoformat(kwargs['created_at'])
             kwargs['updated_at'] = datetime.fromisoformat(kwargs['updated_at'])
             self.__dict__.update(**kwargs)
@@ -44,6 +46,7 @@ class BaseModel:
         dict_copy = self.__dict__.copy()
         dict_copy['__class__'] = self.__class__.__name__
         # dict_copy['created_at'] = datetime.isoformat(self.created_at)
-        dict_copy['created_at'] = datetime.strftime(self.created_at, "%Y-%m-%dT%H:%M:%S.%f")
+        dict_copy['created_at'] = datetime.strftime(self.created_at,
+                                                    "%Y-%m-%dT%H:%M:%S.%f")
         dict_copy['updated_at'] = datetime.isoformat(self.updated_at)
         return dict_copy
