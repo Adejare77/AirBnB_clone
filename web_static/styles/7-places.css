@@ -1,0 +1,21 @@
+/* Places */
+.places h1 {
+    font-size: 30px;
+    margin-top: 20px;
+}
+.place_names {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.place_names article {
+    width: 390px;
+    padding: 20px;
+    padding-left: auto;
+    margin: 20px;
+    font-size: 30px;
+    border: #FF5A5F 1px solid;
+    border-radius: 4px;
+    text-align: center;
+}

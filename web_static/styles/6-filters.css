@@ -1,0 +1,92 @@
+/* Filters */
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.filters {
+    position: relative;
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    border: 1px #DDDDDD solid;
+    border-radius: 4px;
+}
+
+button {
+    position: absolute;
+    right: 30px;
+    font-size: 18px;
+    background-color: #FF5A5F;
+    color: #FFFFFF;
+    height: 48px;
+    width: 20%;
+    border: 0px;
+    border-radius: 4px;
+    top: 50%; /* Move the top of the button middle of the parent */
+    transform: translateY(-50%); /* Adjust the position to center by using the button's height */
+    /* margin-right: 30px; */
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.locations,
+.amenities {
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    width: 25%;
+    font-weight: 600;
+    padding-top: 17px;
+}
+
+.locations {
+    border-right: #DDDDDD 1px solid;
+    border-radius: 4px;
+}
+.amenities {
+    margin-left: 25%;
+}
+
+.filters h3,
+.filters h4 {
+    padding-left: 30px;
+    /* border: 1px purple solid; */
+}
+
+.hidden {
+    visibility: hidden;
+    padding: 15px 30px;
+    margin-top: 17px;
+    border: 1px #DDDDDD solid;
+    background-color: #FAFAFA;
+    font-weight: 400;
+}
+
+.hidden h2 {
+    font-size: 16px;
+    margin-left: -20px;
+}
+
+.california {
+    margin-top: 15px;
+}
+
+section.filters div h4 {
+    font-size:14px;
+    font-weight: 400;
+}
+
+.popover li {
+    padding: 2px 0px;
+}
+
+.locations:hover div,
+.amenities:hover div {
+    visibility: visible;
+}
