@@ -1,0 +1,139 @@
+/* Places */
+
+.places h1 {
+    font-size: 30px;
+    margin-top: 20px;
+}
+.place_names {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.place_names article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 390px;
+    padding: 20px;
+    padding-left: auto;
+    margin: 20px;
+    font-size: 20px;
+    border: #FF5A5F 1px solid;
+    border-radius: 4px;
+    position: relative;
+    z-index: 2;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.price_by_night {
+    color: #FF5A5F;
+    border: #FF5A5F 4px solid;
+    border-radius: 50%;
+    height: 60px;
+    min-width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+}
+
+.information {
+    margin-top: 40px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    border-top: 1px #DDDDDD solid;
+    border-bottom: 1px #DDDDDD solid;
+}
+
+
+.max_guest div::before {
+    width: 100px;
+    display: block;
+    content: url("../images/icon_group.png");
+}
+
+.number_bathrooms div::before {
+    width: 100px;
+    display: block;
+    content: url("../images/icon_bath.png");
+}
+
+.number_rooms div::before {
+    width: 100px;
+    display: block;
+    content: url("../images/icon_bed.png");
+}
+
+.about .user {
+    margin-top: 15px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.description {
+    text-align: left;
+    font-size: 15px;
+}
+
+article .other_info {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.other_info .amenities h2,
+.other_info .reviews h2 {
+    font-size: 16px;
+    border-bottom: #DDDDDD 1px solid;
+    padding-bottom: 8px;
+}
+
+.other_info .amenities ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.other_info .amenities .tv::before {
+    content: url("../images/icon_tv.png");
+}
+
+.other_info .amenities .wiFi::before {
+    content: url("../images/icon_wifi.png");
+}
+
+
+.other_info .amenities .pets::before {
+    content: url("../images/icon_pets.png");
+}
+
+
+.other_info .reviews {
+    margin-top: 40px;
+}
+
+
+.other_info .reviews ul h3 {
+    font-size: 14px;
+    margin: 15px 0 3px 0;
+}
+
+.other_info .reviews ul p {
+    font-size: 12px;
+}
+

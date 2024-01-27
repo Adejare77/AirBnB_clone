@@ -28,8 +28,8 @@ button:hover {
     opacity: 0.8;
 }
 
-.locations,
-.amenities {
+.filters .locations,
+.filters .amenities {
     height: 100%;
     width: 25%;
     border-right: 1px #DDDDDD solid;
@@ -42,7 +42,7 @@ button:hover {
     justify-content: center; /* place the flex elements vertically centered */
 }
 
-.amenities {
+.filters .amenities {
     left: 25%;
 }
 
